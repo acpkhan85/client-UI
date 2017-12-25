@@ -1,0 +1,16 @@
+<app-header *ngIf='schoolData' [banner]='schoolData'></app-header>
+ 
+<div class="home-cols-wrapper">
+    <div class="container">
+        <div class="row">
+            <section class="col-main col-xs-12 col-md-8">
+          <app-headmaster></app-headmaster>        
+          <app-event></app-event>  
+          </section>
+          <app-news></app-news>  
+
+          </div><!--//row-->
+        </div><!--//container-->
+    </div><!--//home-cols-wrapper-->
+
+    <app-footer></app-footer>

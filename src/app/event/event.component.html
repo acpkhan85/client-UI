@@ -1,0 +1,57 @@
+
+      
+        <div class="news-block block">
+            <h3 class="block-title">Latest News</h3>
+            <div class="news-items">
+                <div class="item item-1">
+                    <div class="thumb-holder">
+                        
+                    </div><!--//thumb-holder-->
+                    <div class="content-holder">
+                        <h4 class="news-title"><a href="#" data-toggle="modal" data-target="#news-modal-1">School Concert</a></h4>
+                        <div class="intro">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis...
+                        </div><!--//intro-->
+                        <!-- <a class="btn btn-ghost" href="#" data-toggle="modal" data-target="#news-modal-1">Read more<i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+                        <button type="button" class="btn btn-ghost" (click)="openModal(template)">Read more</button>
+                    </div><!--//content-holder-->
+                </div><!--//item-->
+                <div class="item item-2">
+                    <div class="thumb-holder">
+                        
+                    </div><!--//thumb-holder-->
+                    <div class="content-holder">
+                        <h4 class="news-title"><a href="#" data-toggle="modal" data-target="#news-modal-2">Year 6 Sports Day</a></h4>
+                        <div class="intro">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis...
+                        </div><!--//intro-->
+                        <!-- <a class="btn btn-ghost" href="#" data-toggle="modal" data-target="#news-modal-2">Read more<i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+                        <button type="button" class="btn btn-ghost" (click)="openModal(template)">Read more</button>
+                    </div><!--//content-holder-->
+                </div><!--//item-->
+                <div class="item item-3">
+                    <div class="thumb-holder">
+                        
+                    </div><!--//thumb-holder-->
+                    <div class="content-holder">
+                        <h4 class="news-title"><a href="#" data-toggle="modal" data-target="#news-modal-3">ICT Week</a></h4>
+                        <div class="intro">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis...
+                        </div><!--//intro-->
+                        <!-- <a class="btn btn-ghost" href="#" data-toggle="modal" data-target="#news-modal-3">Read more<i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+                        <button type="button" class="btn btn-ghost" (click)="openModal(template)">Read more</button>
+                    </div><!--//content-holder-->
+                </div><!--//item-->
+            </div><!--//news-items-->
+        </div><!--//news-block-->
+        <ng-template #template>
+            <div class="modal-header">
+              <h4 class="modal-title pull-left">Modal</h4>
+              <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+          </ng-template>
