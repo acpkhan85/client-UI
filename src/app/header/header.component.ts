@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import {SchoolData} from '../model/schoolMainData';
+import {Banner} from '../model/schoolMainData';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +8,11 @@ import {SchoolData} from '../model/schoolMainData';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() banner: SchoolData;
+  @Input() banner: Banner;
   constructor() { }
 
   ngOnInit() {
-    console.log('log banner object',this.banner);
-    console.log('header');
+    console.log('log banner object',this.banner); 
   }
 
 }

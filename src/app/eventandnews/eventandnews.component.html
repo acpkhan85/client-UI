@@ -4,13 +4,14 @@
   </div>
   <div class="mask"></div>
 </section><!--//page-hero-->
-
+ 
 <div class="main-cols-wrapper">
 <section class="events-section">
      <div class="container">
          <h2 class="section-title">Events</h2>
          <div class="row">
-             <div class="item col-xs-12 col-sm-4">
+ 
+             <div class="item col-xs-12 col-sm-4" *ngFor="let new of latestnews; let index = index"> 
                  <div class="item-inner">
                      <div class="time">
                          <div class="time-inner">
@@ -34,52 +35,8 @@
                      </div><!--//details-->
                  </div><!--//item-inner-->
              </div><!--//item-->
-             <div class="item col-xs-12 col-sm-4">
-                 <div class="item-inner">
-                     <div class="time">
-                         <div class="time-inner">
-                             <div class="date">07</div>
-                             <div class="month">Dec</div>
-                         </div>
-                     </div><!--//time-->
-                     <div class="details">
-                         <h4 class="event-title">Drama Workshop</h4>
-                         <div class="meta">
-                             <ul class="list-inline meta-list">
-                                 <li><i class="fa fa-clock-o" aria-hidden="true"></i>2pm - 4pm</li>
-                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i>School Theatre</li>
-                             </ul>
-                         </div><!--//meta-->
-                         <div class="details">
-                             Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. 
-                         </div><!--//details-->
-                         <div class="meta">
-                         </div><!--//meta-->
-                     </div><!--//details-->
-                 </div><!--//item-inner-->
-             </div><!--//item-->
-             <div class="item col-xs-12 col-sm-4">
-                 <div class="item-inner">
-                     <div class="time">
-                         <div class="time-inner">
-                             <div class="date">20</div>
-                             <div class="month">Nov</div>
-                         </div>
-                     </div><!--//time-->
-                     <div class="details">
-                         <h4 class="event-title">Science Day</h4>
-                         <div class="meta">
-                             <ul class="list-inline meta-list">
-                                 <li><i class="fa fa-clock-o" aria-hidden="true"></i>8am - 4pm</li>
-                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i>Sports Hall</li>
-                             </ul>
-                         </div><!--//meta-->
-                         <div class="details">
-                             Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-                         </div><!--//details-->
-                     </div><!--//details-->
-                 </div><!--//item-inner-->
-             </div><!--//item-->
+        
+ 
          </div><!--//row-->
          <div class="action text-center">
               <a class="btn btn-ghost-alt" href="calendar.html">View All<i class="fa fa-angle-right" aria-hidden="true"></i></a>

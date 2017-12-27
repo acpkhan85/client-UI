@@ -16,6 +16,9 @@ import { FooterComponent } from './footer/footer.component';
 import { EventandnewsComponent } from './eventandnews/eventandnews.component';
 import { ModalModule } from 'ngx-bootstrap';
 
+import { SessionService } from './services/session.service'
+import { SmartschoolMainserviceService } from './services/smartschool-mainservice.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +38,7 @@ import { ModalModule } from 'ngx-bootstrap';
     // { path: 'admission', component: AdmissionComponent }, 
     { path: '**', redirectTo: 'home', pathMatch: 'full' } ]),ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [SessionService,SmartschoolMainserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

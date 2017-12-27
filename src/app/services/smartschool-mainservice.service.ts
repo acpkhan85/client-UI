@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
-import {SchoolData} from './model/schoolMainData';
+import {SchoolData} from '../model/schoolMainData';
 import {Observable} from 'rxjs/Rx';
  import {Http ,Response} from '@angular/http';
  // Import RxJs required methods
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+ 
 
 @Injectable()
 export class SmartschoolMainserviceService {
 
   constructor(private http : Http) { }
+
 
   getSmartSchoolData(schoolName:string):Observable<SchoolData>
   {
