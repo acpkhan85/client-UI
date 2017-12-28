@@ -17,7 +17,9 @@ import { EventandnewsComponent } from './eventandnews/eventandnews.component';
 import { ModalModule } from 'ngx-bootstrap';
 
 import { SessionService } from './services/session.service'
-import { SmartschoolMainserviceService } from './services/smartschool-mainservice.service';
+import { SmartschoolMainserviceService } from './services/smartschool-mainservice.service'; 
+import { StaffComponent } from './staff/staff.component';
+import { AdmissionComponent } from './admission/admission.component'; 
 
 @NgModule({
   declarations: [
@@ -29,13 +31,16 @@ import { SmartschoolMainserviceService } from './services/smartschool-mainservic
     AboutusComponent,
     HomeComponent,
     FooterComponent,
-    EventandnewsComponent
+    EventandnewsComponent, 
+    StaffComponent, 
+    AdmissionComponent, 
   ],
   imports: [
     BrowserModule,HttpModule,RouterModule.forRoot([ { path: 'home', component: HomeComponent }, 
     { path: 'aboutUs', component: AboutusComponent }, 
     { path: 'newsevent', component: EventandnewsComponent }, 
-    // { path: 'admission', component: AdmissionComponent }, 
+    { path: 'staff', component: StaffComponent }, 
+    { path: 'admission', component: AdmissionComponent }, 
     { path: '**', redirectTo: 'home', pathMatch: 'full' } ]),ModalModule.forRoot()
   ],
   providers: [SessionService,SmartschoolMainserviceService],

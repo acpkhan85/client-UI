@@ -15,7 +15,9 @@ export class EventComponent implements OnInit {
 
   ngOnInit() {
    console.log(this.events);
+   
    this.sessionService.events = this.events;
+   this.events = this.events.slice(0,3);
   }
 
 }

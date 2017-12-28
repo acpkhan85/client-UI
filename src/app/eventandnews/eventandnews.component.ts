@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SessionService } from '../services/session.service';
-import { LatestNews } from '../model/schoolMainData';
+import { UpcomingEvent, LatestNews } from '../model/schoolMainData';
 
 @Component({
   selector: 'app-eventandnews',
@@ -8,16 +8,17 @@ import { LatestNews } from '../model/schoolMainData';
   styleUrls: ['./eventandnews.component.css']
 })
 export class EventandnewsComponent implements OnInit {
-    news: LatestNews[];
+    latestEvent: UpcomingEvent[];
+    news:LatestNews[];
     msg:string;
+    heroes: string[];
   constructor(private sessionService: SessionService) {
   
   }
 
   ngOnInit() { 
-    this.news = this.sessionService.news;
-    console.log(this.news);
-    this.msg='shreedhar deshwal';
+    this.latestEvent = this.sessionService.events;
+     this.news = this.sessionService.news;
   }
 
 }

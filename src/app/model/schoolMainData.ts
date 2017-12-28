@@ -11,15 +11,26 @@ export class LatestNews {
   img : string;
 }
 
+export class Staff {
+  name : number;
+  position : string; 
+  img : string;
+}
+
 export class UpcomingEvent { 
   header : string;
-  day : string;
+  date : string;
+  month : string;
+  time : string;
   body : string;
+  venue:string;
+
 }
 export class SchoolData {
   banner : Banner; 
   news:LatestNews[];
   events:UpcomingEvent[];
+  staff:Staff[];
 }
 
 

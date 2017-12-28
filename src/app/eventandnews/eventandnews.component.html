@@ -4,31 +4,30 @@
   </div>
   <div class="mask"></div>
 </section><!--//page-hero-->
- 
+
 <div class="main-cols-wrapper">
 <section class="events-section">
      <div class="container">
          <h2 class="section-title">Events</h2>
          <div class="row">
- 
-             <div class="item col-xs-12 col-sm-4" *ngFor="let new of latestnews; let index = index"> 
+             <div class="item col-xs-12 col-sm-4" *ngFor="let events of latestEvent; let index = index"> 
                  <div class="item-inner">
                      <div class="time">
                          <div class="time-inner">
-                             <div class="date">26</div>
-                             <div class="month">Jan</div>
+                             <div class="date">{{events.date}}</div>
+                             <div class="month">{{events.month}}</div>
                          </div>
                      </div><!--//time-->
                      <div class="details">
-                         <h4 class="event-title">Open Evening</h4>
+                         <h4 class="event-title">{{events.header}}</h4>
                          <div class="meta">
                              <ul class="list-inline meta-list">
-                                 <li><i class="fa fa-clock-o" aria-hidden="true"></i>4pm - 9pm</li>
-                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i>Main Building</li>
+                                 <li><i class="fa fa-clock-o" aria-hidden="true"></i>{{events.time}}</li>
+                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i>{{events.venue}}</li>
                              </ul>
                          </div><!--//meta-->
                          <div class="details">
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes.
+                                {{events.body}}
                          </div><!--//details-->
                          <div class="meta">
                          </div><!--//meta-->
@@ -48,94 +47,22 @@
      <div class="container">
          <h2 class="section-title">News</h2>
          <div class="row">
-             <div class="item col-xs-12 col-sm-4">
+             <div class="item col-xs-12 col-sm-4"  *ngFor="let news of news; let index = index"> 
                  <div class="item-inner">
                      <div class="thumb-holder">
-                         <img class="img-responsive" src="assets/images/news/thumb-1.jpg" alt="">
+                         <img class="img-responsive" src={{news.img}} alt="">
                      </div><!--//thumb-holder-->
                      <div class="content-holder">
-                         <h4 class="news-title"><a href="#">School Concert</a></h4>
+                         <h4 class="news-title"><a href="#">{{news.header}}</a></h4>
                          <div class="intro">
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes...
+                             {{news.body}}
                          </div><!--//intro-->
                      </div><!--//content-holder-->
                      <a class="link" href="#" data-toggle="modal" data-target="#news-modal-1"></a>
                  </div><!--//item-inner-->
              </div><!--//item-->
              
-             <div class="item col-xs-12 col-sm-4">
-                 <div class="item-inner">
-                     <div class="thumb-holder">
-                         <img class="img-responsive" src="assets/images/news/thumb-2.jpg" alt="">
-                     </div><!--//thumb-holder-->
-                     <div class="content-holder">
-                         <h4 class="news-title"><a href="#">Year 6 Sports Day</a></h4>
-                         <div class="intro">
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes...
-                         </div><!--//intro-->
-                     </div><!--//content-holder-->
-                     <a class="link" href="#" data-toggle="modal" data-target="#news-modal-2"></a>
-                 </div><!--//item-inner-->
-             </div><!--//item-->
-             <div class="item col-xs-12 col-sm-4">
-                 <div class="item-inner">
-                     <div class="thumb-holder">
-                         <img class="img-responsive" src="assets/images/news/thumb-3.jpg" alt="">
-                     </div><!--//thumb-holder-->
-                     <div class="content-holder">
-                         <h4 class="news-title"><a href="#">ICT Week</a></h4>
-                         <div class="intro">
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes...
-                         </div><!--//intro-->
-                     </div><!--//content-holder-->
-                     <a class="link" href="#" data-toggle="modal" data-target="#news-modal-3"></a>
-                 </div><!--//item-inner-->
-             </div><!--//item-->
-             
-             <div class="item col-xs-12 col-sm-4">
-                 <div class="item-inner">
-                     <div class="thumb-holder">
-                         <img class="img-responsive" src="assets/images/news/thumb-4.jpg" alt="">
-                     </div><!--//thumb-holder-->
-                     <div class="content-holder">
-                         <h4 class="news-title"><a href="#">Reading &amp; Writing Club</a></h4>
-                         <div class="intro">
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes...
-                         </div><!--//intro-->
-                     </div><!--//content-holder-->
-                     <a class="link" href="#" data-toggle="modal" data-target="#news-modal-4"></a>
-                 </div><!--//item-inner-->
-             </div><!--//item-->
-             
-             <div class="item col-xs-12 col-sm-4">
-                 <div class="item-inner">
-                     <div class="thumb-holder">
-                         <img class="img-responsive" src="assets/images/news/thumb-5.jpg" alt="">
-                     </div><!--//thumb-holder-->
-                     <div class="content-holder">
-                         <h4 class="news-title"><a href="#">Year 7 PE</a></h4>
-                         <div class="intro">
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes...
-                         </div><!--//intro-->
-                     </div><!--//content-holder-->
-                     <a class="link" href="#" data-toggle="modal" data-target="#news-modal-5"></a>
-                 </div><!--//item-inner-->
-             </div><!--//item-->
-             
-             <div class="item col-xs-12 col-sm-4">
-                 <div class="item-inner">
-                     <div class="thumb-holder">
-                         <img class="img-responsive" src="assets/images/news/thumb-6.jpg" alt="">
-                     </div><!--//thumb-holder-->
-                     <div class="content-holder">
-                         <h4 class="news-title"><a href="#">Year 5 Music Club</a></h4>
-                         <div class="intro">
-                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes...
-                         </div><!--//intro-->
-                     </div><!--//content-holder-->
-                     <a class="link" href="#" data-toggle="modal" data-target="#news-modal-6"></a>
-                 </div><!--//item-inner-->
-             </div><!--//item-->
+            
              
          </div><!--//row-->
          <div class="action text-center">
@@ -144,4 +71,4 @@
      </div><!--//container-->
  </section>
 </div><!--//main-cols-wrapper-->
-<app-footer></app-footer>
+ 

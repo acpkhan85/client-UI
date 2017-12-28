@@ -20,6 +20,7 @@ export class NewsComponent  implements OnInit {
   ngOnInit() {
    console.log(this.news);
    this.sessionService.news = this.news;
+   this.news=this.news.slice(0,3);
   }
   openModal(template: TemplateRef<any>, id :string) { 
     console.log(id);

@@ -1,0 +1,30 @@
+ 
+<section class="page-hero">
+  <div class="hero-page-title container">
+      <h1>Our Staff</h1>
+  </div>
+  <div class="mask"></div>
+</section>
+
+<div class="main-cols-wrapper">
+  <div class="container">
+      <div class="block staff-block">
+          <div class="row">
+
+            <div class="item col-xs-6 col-sm-4 col-md-3" *ngFor="let staf of staff;"> 
+                <div class="item-inner">
+                    <div class="profile-holder">
+                        <img class="img-responsive" src="{{staf.img}}" alt="">
+                    </div>
+                    <div class="profile-desc">
+                        <h4 class="name">{{staf.name}}</h4>
+                        <div class="title">{{staf.position}}</div>
+                    </div><!--//profile-desc-->
+                    <a class="link" href="#" data-toggle="modal" data-target="#staff-modal-1"></a>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+
+          </div><!--//row-->
+      </div><!--//block-->
+  </div><!--//container-->
+</div>

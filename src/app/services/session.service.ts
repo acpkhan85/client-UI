@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SchoolData, LatestNews, UpcomingEvent } from '../model/schoolMainData'
+import { SchoolData, LatestNews, UpcomingEvent, Staff } from '../model/schoolMainData'
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
  
 
@@ -11,6 +11,7 @@ export class SessionService {
 private _name: string;
 private _latestNews : LatestNews[]; 
 private _upcomingEvent : UpcomingEvent[]; 
+private _staff: Staff[];
 schoolData: SchoolData;
 
 private messageSource = new BehaviorSubject<string>("default message");
@@ -34,5 +35,13 @@ get events():UpcomingEvent[] {
 
 set events(events:UpcomingEvent[]) {
   this._upcomingEvent = events;
+}
+
+get staff():Staff[] {
+  return this._staff;
+}
+
+set staff(staff:Staff[]) {
+  this._staff = staff;
 }
 }
