@@ -23,7 +23,7 @@ export class NewsComponent  implements OnInit {
    this.news=this.news.slice(0,3);
   }
   openModal(template: TemplateRef<any>, id :string) { 
-    console.log(id);
+  
     this.modalRef = this.modalService.show(template);     
   }
 

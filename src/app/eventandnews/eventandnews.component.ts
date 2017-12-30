@@ -10,7 +10,7 @@ import { UpcomingEvent, LatestNews } from '../model/schoolMainData';
 export class EventandnewsComponent implements OnInit {
     latestEvent: UpcomingEvent[];
     news:LatestNews[];
-    msg:string;
+    msg:string;  
     heroes: string[];
   constructor(private sessionService: SessionService) {
   

@@ -19,7 +19,11 @@ import { ModalModule } from 'ngx-bootstrap';
 import { SessionService } from './services/session.service'
 import { SmartschoolMainserviceService } from './services/smartschool-mainservice.service'; 
 import { StaffComponent } from './staff/staff.component';
-import { AdmissionComponent } from './admission/admission.component'; 
+import { AdmissionComponent } from './admission/admission.component';
+import { TestComponent } from './test/test.component';
+import { ExamTimeTableComponent } from './exam-time-table/exam-time-table.component';
+import { TimeTableComponent } from './time-table/time-table.component';
+import { AttendanceComponent } from './attendance/attendance.component'; 
 
 @NgModule({
   declarations: [
@@ -33,7 +37,7 @@ import { AdmissionComponent } from './admission/admission.component';
     FooterComponent,
     EventandnewsComponent, 
     StaffComponent, 
-    AdmissionComponent, 
+    AdmissionComponent, TestComponent, ExamTimeTableComponent, TimeTableComponent, AttendanceComponent, 
   ],
   imports: [
     BrowserModule,HttpModule,RouterModule.forRoot([ { path: 'home', component: HomeComponent }, 
@@ -41,6 +45,9 @@ import { AdmissionComponent } from './admission/admission.component';
     { path: 'newsevent', component: EventandnewsComponent }, 
     { path: 'staff', component: StaffComponent }, 
     { path: 'admission', component: AdmissionComponent }, 
+    { path: 'timeTable', component: TimeTableComponent }, 
+    { path: 'examTimeTable', component: ExamTimeTableComponent }, 
+    { path: 'attendance', component: AttendanceComponent }, 
     { path: '**', redirectTo: 'home', pathMatch: 'full' } ]),ModalModule.forRoot()
   ],
   providers: [SessionService,SmartschoolMainserviceService],

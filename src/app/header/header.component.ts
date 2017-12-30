@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('log banner object',this.banner); 
+ 
   }
 
 }

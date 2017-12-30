@@ -18,18 +18,18 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('service call start');
+ 
     this._smartSchoolDataService.getSmartSchoolData("test")
     .subscribe(
     schoolData => {
       // console.log('this is response', schoolData);
       this.schoolData = schoolData
         , err => { console.log(err); }
-       console.log('local varibale result', this.schoolData.banner);
+      
        this._sessionService.staff = this.schoolData.staff;       
     }
     );
-      console.log('service call end');
+     
   }
 
 

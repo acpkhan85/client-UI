@@ -33,10 +33,14 @@
                             </ul>                            
                         </li><!--//dropdown-->   
                         <li class="nav-item dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Student Attendance <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a routerLink="staff">Holidays</a></li>
-                                    <li><a href="fees.html">Exam TimeTable</a></li>                                         
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Student <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">                                        
+                                    <li><a routerLink="staff">Staff</a></li>
+                                    <li><a routerLink="attendance">Attendance</a></li> 
+                                    <li><a routerLink="Holiday">Holiday</a></li>
+                                    <li><a routerLink="timeTable">TimeTable</a></li>  
+                                    <li><a routerLink="examTimeTable">Exam TimeTable</a></li>                                                                     
+                                                                                                 
                                 </ul>                            
                             </li><!--//dropdown-->     
                         <li class="nav-item"><a href="contact.html">Contact</a></li>                   
@@ -52,11 +56,12 @@
                 <h2 class="tagline">Unlock potential and aim higher</h2>
             </div><!--//container-->                    
         </div><!--//branding-->
-    </header><!--//header-->   
-
+    </header><!--//header-->    
     <router-outlet>
     </router-outlet>    
     <app-footer></app-footer>
+
+
     <!-- <app-header></app-header>
     <div class="home-cols-wrapper">
             <div class="container">

@@ -4,6 +4,20 @@ export class Banner {
   image3 : string;
 }
 
+
+export class Attendance {
+  leaveType : number;
+  notes: string;
+  date:string;
+  month:Number;
+}
+
+
+///0 = for unplanned absenti
+///1 = plan absent
+///3 for public holiday
+
+
 export class LatestNews {
   id : number;
   header : string;
